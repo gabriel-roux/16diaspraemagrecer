@@ -1,3 +1,5 @@
+'use client'
+
 /* eslint-disable react/no-unescaped-entities */
 import Book from '@/assets/book.png'
 import Image from 'next/image'
@@ -26,13 +28,31 @@ import Carousel from '@/components/carousel'
 import Link from 'next/link'
 import Footer from '@/components/footer'
 import { Headline } from '@/components/headline'
+import { useRef } from 'react'
 
 export default function Home() {
+  const desafioRef = useRef<HTMLDivElement>(null)
+  const comoFuncionaRef = useRef<HTMLDivElement>(null)
+  const depoimentosRef = useRef<HTMLDivElement>(null)
+  const praQuemERef = useRef<HTMLDivElement>(null)
+  const quemSomosRef = useRef<HTMLDivElement>(null)
+  const duvidasRef = useRef<HTMLDivElement>(null)
+
   return (
     <>
-      <Headline />
+      <Headline
+        desafioRef={desafioRef}
+        comoFuncionaRef={comoFuncionaRef}
+        depoimentosRef={depoimentosRef}
+        praQuemERef={praQuemERef}
+        quemSomosRef={quemSomosRef}
+        duvidasRef={duvidasRef}
+      />
       <main className="mt-14">
-        <section className="w-full bg-gradient-to-r from-[#14121c] to-[#6050a020] px-4 md:px-0 py-12">
+        <section
+          ref={desafioRef}
+          className="w-full bg-gradient-to-r from-[#14121c] to-[#6050a020] px-4 md:px-0 py-12"
+        >
           <div className="flex flex-col md:flex-row justify-between items-center max-w-6xl mx-auto">
             <div className="w-full md:max-w-[50%] flex flex-col gap-8 items-start">
               <div className="flex flex-col gap-3">
@@ -76,7 +96,10 @@ export default function Home() {
           </div>
         </section>
 
-        <section className="w-full px-4 md:px-0 py-20 max-w-6xl mx-auto flex flex-col gap-8">
+        <section
+          ref={comoFuncionaRef}
+          className="w-full px-4 md:px-0 py-20 max-w-6xl mx-auto flex flex-col gap-8"
+        >
           <div>
             <h2 className="text-2xl md:text-4xl font-bold text-center text-gray-100">
               Como Funciona o Nosso{' '}
@@ -183,7 +206,10 @@ export default function Home() {
           </div>
         </section>
 
-        <section className="w-full px-4 md:px-0 py-24 bg-[#9168f7] flex flex-col items-center gap-12">
+        <section
+          ref={depoimentosRef}
+          className="w-full px-4 md:px-0 py-24 bg-[#9168f7] flex flex-col items-center gap-12"
+        >
           <h3 className="text-2xl md:text-4xl font-black text-center text-white md:max-w-[60%]">
             Junte-se a mulheres que seguiram o guia e hoje estão felizes e
             realizadas,{' '}
@@ -333,7 +359,10 @@ export default function Home() {
           </Link>
         </section>
 
-        <section className="w-full px-4 md:px-0 py-20 flex flex-col items-center gap-12 relative bg-white">
+        <section
+          ref={praQuemERef}
+          className="w-full px-4 md:px-0 py-20 flex flex-col items-center gap-12 relative bg-white"
+        >
           <div className="w-full max-w-6xl mx-auto">
             <div className="flex justify-between items-start">
               <div className="flex flex-col gap-8">
@@ -444,7 +473,10 @@ export default function Home() {
           </div>
         </section>
 
-        <section className="w-full px-4 md:px-0 py-24 flex flex-col items-center gap-12 relative overflow-hidden">
+        <section
+          ref={quemSomosRef}
+          className="w-full px-4 md:px-0 py-24 flex flex-col items-center gap-12 relative overflow-hidden"
+        >
           <div className="w-full max-w-6xl mx-auto">
             <div className="mb-20">
               <h3 className="text-3xl md:text-5xl font-black text-white text-center md:leading-[60px]">
@@ -551,7 +583,10 @@ export default function Home() {
           </div>
         </section>
 
-        <section className="w-full px-4 md:px-0 py-20 flex flex-col items-center gap-12 relative">
+        <section
+          ref={duvidasRef}
+          className="w-full px-4 md:px-0 py-20 flex flex-col items-center gap-12 relative"
+        >
           <div className="w-full max-w-6xl mx-auto">
             <div className="flex items-center justify-between">
               <div className="w-full md:w-1/2 flex flex-col gap-8">

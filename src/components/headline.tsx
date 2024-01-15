@@ -1,7 +1,31 @@
 import Image from 'next/image'
 import Logo from '@/assets/logo.png'
+import { RefObject } from 'react'
 
-export function Headline() {
+interface HeadlineProps {
+  desafioRef: RefObject<HTMLDivElement>
+  comoFuncionaRef: RefObject<HTMLDivElement>
+  depoimentosRef: RefObject<HTMLDivElement>
+  praQuemERef: RefObject<HTMLDivElement>
+  quemSomosRef: RefObject<HTMLDivElement>
+  duvidasRef: RefObject<HTMLDivElement>
+}
+
+export function Headline({
+  desafioRef,
+  comoFuncionaRef,
+  depoimentosRef,
+  praQuemERef,
+  quemSomosRef,
+  duvidasRef,
+}: HeadlineProps) {
+  const goToRef = (ref: RefObject<HTMLDivElement>) => {
+    ref.current?.scrollIntoView({
+      behavior: 'smooth',
+      block: 'start',
+    })
+  }
+
   return (
     <header className="w-full h-20 py-6">
       <div className="flex justify-center md:justify-between items-center max-w-6xl mx-auto w-full">
@@ -15,17 +39,19 @@ export function Headline() {
         />
 
         <div className="md:flex items-center gap-6 hidden">
-          <button>Desafio 16 Dias</button>
+          <button onClick={() => goToRef(desafioRef)}>Desafio 16 Dias</button>
 
-          <button>Como Funciona</button>
+          <button onClick={() => goToRef(comoFuncionaRef)}>
+            Como Funciona
+          </button>
 
-          <button>Depoimentos</button>
+          <button onClick={() => goToRef(depoimentosRef)}>Depoimentos</button>
 
-          <button>Pra quem é</button>
+          <button onClick={() => goToRef(praQuemERef)}>Pra quem é</button>
 
-          <button>Quem Somos</button>
+          <button onClick={() => goToRef(quemSomosRef)}>Quem Somos</button>
 
-          <button>Dúvidas</button>
+          <button onClick={() => goToRef(duvidasRef)}>Dúvidas</button>
         </div>
       </div>
     </header>
