@@ -63,7 +63,7 @@ export default function Home() {
             width={350}
             height={350}
             quality={100}
-            className="rounded-xl mt-16"
+            className="rounded-xl mt-16 block md:hidden"
           />
         </div>
       </section>
