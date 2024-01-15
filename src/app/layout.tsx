@@ -1,8 +1,8 @@
-/* eslint-disable jsx-a11y/alt-text */
 import type { Metadata } from 'next'
 // eslint-disable-next-line camelcase
 import { Nunito_Sans, Roboto } from 'next/font/google'
 import '@/styles/globals.css'
+import Image from 'next/image'
 
 const roboto = Roboto({
   subsets: ['latin'],
@@ -46,6 +46,7 @@ export default function RootLayout({
                     s.parentNode.insertBefore(t,s)}(window, document,'script',
                     'https://connect.facebook.net/en_US/fbevents.js');
                     fbq('init', '1087262959085545');
+                    fbq('track', 'PageView');
                     `,
           }}
         />
@@ -100,10 +101,11 @@ export default function RootLayout({
         {children}
 
         <noscript>
-          <img
-            height="1"
-            width="1"
-            className="hidden"
+          <Image
+            height={1}
+            width={1}
+            style={{ display: 'none' }}
+            alt="Facebook Pixel"
             src="https://www.facebook.com/tr?id=1087262959085545&ev=PageView&noscript=1"
           />
         </noscript>
