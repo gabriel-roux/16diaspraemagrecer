@@ -77,6 +77,8 @@ export default function RootLayout({
           href="https://player-vz-cab8bf78-de6.tv.pandavideo.com.br"
         />
         <link rel="dns-prefetch" href="https://vz-cab8bf78-de6.b-cdn.net" />
+
+        <link rel="icon" href="/favicon.svg" sizes="any" />
       </head>
       <body className={`${NunitoSans.variable} ${roboto.className}`}>
         {children}

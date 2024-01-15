@@ -677,6 +677,14 @@ video {
   max-width: 32rem;
 }
 
+.max-w-5xl {
+  max-width: 64rem;
+}
+
+.max-w-\[950px\] {
+  max-width: 950px;
+}
+
 .flex-shrink-0 {
   flex-shrink: 0;
 }
@@ -692,6 +700,10 @@ video {
 
 .cursor-pointer {
   cursor: pointer;
+}
+
+.resize {
+  resize: both;
 }
 
 .flex-col {
@@ -766,8 +778,16 @@ video {
   border-radius: 0.75rem;
 }
 
+.rounded-2xl {
+  border-radius: 1rem;
+}
+
 .border {
   border-width: 1px;
+}
+
+.border-0 {
+  border-width: 0px;
 }
 
 .border-purple-600 {
@@ -842,6 +862,10 @@ video {
   padding: 1.5rem;
 }
 
+.p-10 {
+  padding: 2.5rem;
+}
+
 .px-4 {
   padding-left: 1rem;
   padding-right: 1rem;
@@ -895,6 +919,11 @@ video {
 .py-6 {
   padding-top: 1.5rem;
   padding-bottom: 1.5rem;
+}
+
+.py-10 {
+  padding-top: 2.5rem;
+  padding-bottom: 2.5rem;
 }
 
 .text-left {
@@ -951,6 +980,11 @@ video {
 .text-xl {
   font-size: 1.25rem;
   line-height: 1.75rem;
+}
+
+.text-6xl {
+  font-size: 3.75rem;
+  line-height: 1;
 }
 
 .font-black {
@@ -1042,6 +1076,12 @@ video {
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
 
+.shadow-2xl {
+  --tw-shadow: 0 25px 50px -12px rgb(0 0 0 / 0.25);
+  --tw-shadow-colored: 0 25px 50px -12px var(--tw-shadow-color);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
+
 .shadow-gray-800\/20 {
   --tw-shadow-color: rgb(31 41 55 / 0.2);
   --tw-shadow: var(--tw-shadow-colored);
@@ -1049,6 +1089,21 @@ video {
 
 .shadow-violet-800\/50 {
   --tw-shadow-color: rgb(91 33 182 / 0.5);
+  --tw-shadow: var(--tw-shadow-colored);
+}
+
+.shadow-gray-800\/100 {
+  --tw-shadow-color: rgb(31 41 55 / 1);
+  --tw-shadow: var(--tw-shadow-colored);
+}
+
+.shadow-purple-800\/100 {
+  --tw-shadow-color: rgb(107 33 168 / 1);
+  --tw-shadow: var(--tw-shadow-colored);
+}
+
+.shadow-purple-800\/20 {
+  --tw-shadow-color: rgb(107 33 168 / 0.2);
   --tw-shadow: var(--tw-shadow-colored);
 }
 
@@ -1063,6 +1118,14 @@ video {
 
 .transition-all {
   transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
+
+.transition {
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, -webkit-backdrop-filter;
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter;
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter, -webkit-backdrop-filter;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-duration: 150ms;
 }
@@ -1197,6 +1260,10 @@ body {
 
   .md\:justify-between {
     justify-content: space-between;
+  }
+
+  .md\:p-10 {
+    padding: 2.5rem;
   }
 
   .md\:px-0 {
