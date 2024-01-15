@@ -62,7 +62,7 @@ export default function CommentStruture({
               quality={100}
               width={60}
               height={60}
-              className="w-16 h-16 object-cover rounded-full flex-shrink-0"
+              className="w-12 h-12 md:w-16 md:h-16 object-cover rounded-full flex-shrink-0"
             />
             <button
               onClick={handleLike}
@@ -72,18 +72,18 @@ export default function CommentStruture({
                   ? 'linear-gradient(90deg, #a855f7, #c084fc)'
                   : '#f0f2f5',
               }}
-              className="flex items-center justify-center gap-2 px-4 py-2 rounded-md font-bold hover:scale-[1.05] transition-all duration-200"
+              className="flex items-center justify-center gap-2 px-3 py-1 text-sm md:text-base md:px-4 md:py-2 rounded-md font-bold hover:scale-[1.05] transition-all duration-200"
             >
               Curtir
             </button>
           </div>
 
-          <div className="w-full min-w-[22rem] g-auto min-h-24 p-5 rounded-xl bg-[#2e2a41] shadow-xl">
+          <div className="w-full md:min-w-[22rem] g-auto min-h-24 p-5 rounded-xl bg-[#2e2a41] shadow-xl">
             <div className="flex justify-between mb-2">
               <h4 className="font-bold">{title}</h4>
               <p className="text-gray-300">{time}</p>
             </div>
-            <p className="text-gray-400">{desc}</p>
+            <p className="text-gray-400 text-sm md:text-base">{desc}</p>
             <div className="flex items-center gap-1 px-2 py-1 rounded-3xl r-0 absolute bg-[#f8fafc] shadow-md transition-all duration-200 hover:scale-[1.05]">
               <Image
                 src={Like}

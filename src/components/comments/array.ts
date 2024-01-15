@@ -1,25 +1,23 @@
 import Perfil2 from '../../../public/perfil2.webp'
 import Perfil3 from '../../../public/perfil3.webp'
 import Perfil6 from '../../../public/perfil6.webp'
-import Perfil14 from '../../../public/perfil14.webp'
-import Perfil15 from '../../../public/perfil15.webp'
+import Perfil15 from '../../../public/perfil2.png'
 import Perfil17 from '../../../public/perfil17.webp'
 import Perfil18 from '../../../public/perfil18.webp'
 import Perfil20 from '../../../public/perfil20.webp'
-import Perfil25 from '../../../public/perfil25.webp'
-import Perfil27 from '../../../public/perfil27.webp'
+import Perfil25 from '../../../public/perfil3.png'
+import Perfil27 from '../../../public/perfil8.png'
 import Perfil1 from '../../../public/perfil1.webp'
+import Perfil19 from '../../../public/perfil1.png'
+import Perfil21 from '../../../public/perfil4.png'
+import Perfil5 from '../../../public/perfil5.png'
+import Perfil24 from '../../../public/perfil6.png'
 
-interface LocationProps {
-  city: string
-  region: string
-}
-
-export const comentarios = (location: LocationProps) => [
+export const comentarios = () => [
   {
     src: Perfil2,
     name: 'Francisca Santos',
-    desc: 'O único site que realmente funciona comigo, já tinha tentado de tudo para conseguir ganhar uma renda extra, resolvi então utilizar esse app , e consegui fazer 1300 na primeira semana, estou muito feliz e também muito aliviada porque se não fosse esse site eu nunca iria poder sair e comprar o que eu realmente quero, e não o que meu bolso pode !! muito bom mesmo recomendo pessoal!',
+    desc: 'Estou impressionada com os resultados deste desafio de 16 dias! Nunca imaginei que poderia perder peso tão rapidamente e de forma saudável. Estou muito mais confiante e feliz comigo mesma. Recomendo fortemente!',
     time: '1 hora',
     ammount: 49,
     hasRespostas: false,
@@ -28,89 +26,55 @@ export const comentarios = (location: LocationProps) => [
   {
     src: Perfil6,
     name: 'Carla Fernandes',
-    desc: `Alguém aqui do ${
-      location.region === 'undefined' ? 'Sul' : location.region
-    } já baixou? quero saber se os 100 reais cai mesmo na conta.`,
+    desc: 'Esse programa de emagrecimento é incrível! Já estou no meu décimo dia e os resultados são visíveis. Sinto-me mais leve, energética e muito satisfeita. Estou ansiosa para ver os resultados finais!',
     time: '2 horas',
     ammount: 67,
     hasRespostas: true,
     respostas: [
       {
-        src: Perfil14,
-        name: 'Lúcia Oliveira',
-        desc: `Oi carla, sim sou de ${
-          location.city === 'undefined' ? 'Curitiba' : location.city
-        }. aqui deu certo, baixei o app e em menos de 10 minutos caiu na minha conta! Vale a pena.`,
+        src: Perfil1,
+        name: 'Tânia Gomes',
+        desc: 'Carla, também estou no décimo dia e compartilho do seu entusiasmo. É tão gratificante ver os resultados, não é?',
         time: '1 hora',
-        ammount: 49,
+        ammount: 53,
       },
       {
-        src: Perfil6,
-        name: 'Carla Fernandes',
-        desc: 'que ótimo, vou baixar agora, obrigada',
-        time: '1 hora',
-        ammount: 32,
+        src: Perfil17,
+        name: 'Sara Viana',
+        desc: 'Incrível! Estou começando hoje e seu comentário me motivou ainda mais. Espero ter resultados tão bons quanto os seus!',
+        time: '30 minutos',
+        ammount: 45,
       },
     ],
   },
   {
     src: Perfil17,
     name: 'Bruna Carvalho',
-    desc: 'minha conta demorou mais de meia hora pra ser ativada por que? no vídeo foi tudo automatico por que o da minha demorou esse tempo todo pra ser ativada?',
+    desc: 'No começo, estava cética, mas agora estou totalmente convencida. Este desafio de 16 dias é tudo o que eu precisava. Perdi peso de forma saudável e ainda aprendi muitas dicas de nutrição e exercícios.',
     time: '7 horas',
     ammount: 76,
     hasRespostas: true,
     respostas: [
       {
-        src: Perfil1,
-        name: 'Lucas Fernando',
-        desc: 'Olá Bruna, peço desculpas pela demora. Estavamos em manutenção! Já ativamos sua conta você já tem acesso total ao app!',
-        time: '7 horas',
-        ammount: 111,
-      },
-      {
-        src: Perfil17,
-        name: 'Bruna Carvalho',
-        desc: 'consegui acessar aqui, já fiz meus primeiros 30 reais',
-        time: '10 horas',
-        ammount: 96,
-      },
-      {
-        src: Perfil15,
-        name: 'Juliana Pacheco',
-        desc: 'Funciona mesmo bruna? to achando que é golpe isso ai',
+        src: Perfil19,
+        name: 'Laura Neves',
+        desc: 'Bruna, seu progresso é inspirador! Eu estava em dúvida, mas ler sobre sua experiência me encorajou a começar o desafio.',
         time: '6 horas',
-        ammount: 56,
-      },
-      {
-        src: Perfil17,
-        name: 'Bruna Carvalho',
-        desc: 'aqui deu certo sim, fiz 50 reais já e saquei, caiu certinho. Pode baixar ai, tenho certeza de que você vai adorar Juliana',
-        time: '4 horas',
-        ammount: 46,
+        ammount: 62,
       },
       {
         src: Perfil15,
-        name: 'Juliana Pacheco',
-        desc: 'O preço ta bom, vou dar uma chance',
-        time: '3 horas',
-        ammount: 54,
+        name: 'Helena Castro',
+        desc: 'Que ótimo saber que você teve uma experiência positiva, Bruna! Também estou vendo resultados positivos e estou adorando as dicas de nutrição.',
+        time: '4 horas',
+        ammount: 59,
       },
     ],
   },
   {
-    src: Perfil27,
-    name: 'Rodrigo Moraes',
-    desc: 'Galera, não tem o aplicativo nas lojas de aplicativos, só tem aqui! Consegui instalar aqui, de boa, fiz 735 essa semana já!',
-    time: '3 horas',
-    ammount: 65,
-    hasRespostas: false,
-    respostas: [],
-  },
-  {
     src: Perfil25,
     name: 'Ana Ribeiro',
-    desc: 'Confesso que estava desconfiada, mas decidi baixar. Fiquei surpresa ao ver o primeiro pix caindo na minha conta',
+    desc: 'Este desafio mudou minha vida! Não é só sobre perder peso, mas também sobre ganhar confiança e se sentir bem. Estou amando cada dia deste programa e já recomendei para todas as minhas amigas.',
     time: '5 horas',
     ammount: 84,
     hasRespostas: false,
@@ -119,43 +83,67 @@ export const comentarios = (location: LocationProps) => [
   {
     src: Perfil18,
     name: 'Rachel Fogaça',
-    desc: 'Vou dar uma chance a esse app. Espero que eu não me decepcione.',
-    time: '8 horas',
+    desc: 'Depois de tentar tantas coisas, finalmente encontrei algo que funciona. Este desafio de 16 dias é fácil de seguir e os resultados são surpreendentes. Estou muito mais feliz com meu corpo agora.',
+    time: '28 horas',
     ammount: 126,
-    hasRespostas: true,
-    respostas: [
-      {
-        src: Perfil1,
-        name: 'Lucas Fernando',
-        desc: 'Pode ficar tranquilo, nós temos garantia incondicional de 7 dias, se você não gostar do app ou não servir pra você, te devolvemos 100% do seu dinheiro.',
-        time: '8 horas',
-        ammount: 111,
-      },
-      {
-        src: Perfil18,
-        name: 'Rachel Fogaça',
-        desc: 'Obrigado, decidi confiar em você e funcionou, ainda não saquei mas já consegui acessar, obrigado',
-        time: '9 horas',
-        ammount: 96,
-      },
-    ],
-  },
-  {
-    src: Perfil20,
-    name: 'José Silva',
-    desc: 'Comprei o app e estou impressionado com a facilidade de mexer, pra mim que sou leigo nessas coisas funcionou legal',
-    time: '5 horas',
-    ammount: 45,
     hasRespostas: false,
     respostas: [],
   },
   {
     src: Perfil3,
     name: 'Elvira Gonçalves',
-    desc: 'uso ele tem 8 meses, me ajuda bastante a ter uma renda extra no fim do mês, faço 4000 por mês sem esforço, mais o meu salário, consigo viver uma vida com fartura!',
+    desc: 'Adorei cada parte deste desafio de emagrecimento. Não é apenas sobre perder peso, mas também sobre aprender a manter um estilo de vida saudável. Estou muito satisfeita com os resultados obtidos.',
     time: '7 horas',
     ammount: 68,
     hasRespostas: false,
     respostas: [],
+  },
+  {
+    src: Perfil24,
+    name: 'Mariana Lima',
+    desc: 'Não posso acreditar nos resultados que estou vendo com este desafio de 16 dias! Já perdi alguns quilos e me sinto ótima. Alguém mais está vendo resultados tão rápidos?',
+    time: '3 horas',
+    ammount: 88,
+    hasRespostas: true,
+    respostas: [
+      {
+        src: Perfil21,
+        name: 'Julia Pereira',
+        desc: 'Sim, Mariana! Também estou no desafio e perdi peso mais rápido do que esperava. Estou amando os resultados!',
+        time: '2 horas',
+        ammount: 73,
+      },
+      {
+        src: Perfil20,
+        name: 'Fernanda Costa',
+        desc: 'Eu comecei há uma semana e já sinto minhas roupas mais folgadas. Estou tão feliz!',
+        time: '1 hora',
+        ammount: 65,
+      },
+    ],
+  },
+  {
+    src: Perfil27,
+    name: 'Patrícia Soares',
+    desc: 'Este programa é incrível! Já estou no meu último dia e estou maravilhada com os resultados. Alguém sabe se eles oferecem algum programa de continuidade?',
+    time: '6 horas',
+    ammount: 92,
+    hasRespostas: true,
+    respostas: [
+      {
+        src: Perfil5,
+        name: 'Renata Mendes',
+        desc: 'Oi Patrícia, também terminei recentemente e descobri que eles oferecem um programa de manutenção. Vale a pena conferir!',
+        time: '5 horas',
+        ammount: 81,
+      },
+      {
+        src: Perfil1,
+        name: 'Camila Rodrigues',
+        desc: 'Terminei o desafio há duas semanas e estou seguindo o programa de continuidade. Está me ajudando a manter o peso e a continuar saudável.',
+        time: '4 horas',
+        ammount: 78,
+      },
+    ],
   },
 ]

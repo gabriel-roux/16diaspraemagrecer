@@ -25,15 +25,15 @@ export function Formulario2({ nextStep }: Formulario1Props) {
         <h3 className="font-nunito text-2xl font-bold text-center">
           2. HÁBITOS ALIMENTARES
         </h3>
-        <p className="font-nunito text-lg text-gray-400">
+        <p className="font-nunito text-lg text-gray-400 text-center">
           Qual é a sua abordagem em relação aos alimentos?
         </p>
       </div>
 
-      <div className="flex flex-col gap-4">
+      <div className="flex flex-col gap-4 px-4 md:px-0">
         <div
           onClick={() => handleSelected(1)}
-          className={`py-4 px-6 bg-[#2e2a41] rounded-lg w-[460px] border ${
+          className={`py-4 px-6 bg-[#2e2a41] rounded-lg md:w-[460px] border ${
             selected === 1 ? 'border-purple-600' : 'border-transparent'
           } hover:border-purple-600 transition-all duration-200 cursor-pointer shadow-lg shadow-gray-800/20 flex items-center justify-between`}
         >
@@ -51,7 +51,7 @@ export function Formulario2({ nextStep }: Formulario1Props) {
         </div>
         <div
           onClick={() => handleSelected(2)}
-          className={`py-4 px-6 bg-[#2e2a41] rounded-lg w-[460px] border ${
+          className={`py-4 px-6 bg-[#2e2a41] rounded-lg md:w-[460px] border ${
             selected === 2 ? 'border-purple-600' : 'border-transparent'
           } hover:border-purple-600 transition-all duration-200 cursor-pointer shadow-lg shadow-gray-800/20 flex items-center justify-between`}
         >
@@ -69,7 +69,7 @@ export function Formulario2({ nextStep }: Formulario1Props) {
         </div>
         <div
           onClick={() => handleSelected(3)}
-          className={`py-4 px-6 bg-[#2e2a41] rounded-lg w-[460px] border ${
+          className={`py-4 px-6 bg-[#2e2a41] rounded-lg md:w-[460px] border ${
             selected === 3 ? 'border-purple-600' : 'border-transparent'
           } hover:border-purple-600 transition-all duration-200 cursor-pointer shadow-lg shadow-gray-800/20 flex items-center justify-between`}
         >
@@ -86,7 +86,7 @@ export function Formulario2({ nextStep }: Formulario1Props) {
         </div>
         <div
           onClick={() => handleSelected(4)}
-          className={`py-4 px-6 bg-[#2e2a41] rounded-lg w-[460px] border ${
+          className={`py-4 px-6 bg-[#2e2a41] rounded-lg md:w-[460px] border ${
             selected === 4 ? 'border-purple-600' : 'border-transparent'
           } hover:border-purple-600 transition-all duration-200 cursor-pointer shadow-lg shadow-gray-800/20 flex items-center justify-between`}
         >
@@ -103,7 +103,7 @@ export function Formulario2({ nextStep }: Formulario1Props) {
         </div>
         <div
           onClick={() => handleSelected(5)}
-          className={`py-4 px-6 bg-[#2e2a41] rounded-lg w-[460px] border ${
+          className={`py-4 px-6 bg-[#2e2a41] rounded-lg md:w-[460px] border ${
             selected === 5 ? 'border-purple-600' : 'border-transparent'
           } hover:border-purple-600 transition-all duration-200 cursor-pointer shadow-lg shadow-gray-800/20 flex items-center justify-between`}
         >

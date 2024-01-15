@@ -18,8 +18,8 @@ export default function QuestionarioPage() {
 
   return (
     <>
-      <header className="w-full py-4 bg-[#1b1929]">
-        <div className="flex justify-center md:justify-between items-center max-w-4xl mx-auto w-full">
+      <header className="w-full px-4 md:px-0 py-4 bg-[#1b1929]">
+        <div className="flex justify-between items-center md:max-w-4xl mx-auto w-full">
           <button
             disabled={step === 0}
             onClick={() => setStep(step - 1)}
@@ -51,7 +51,7 @@ export default function QuestionarioPage() {
         </div>
       </header>
       <main className="mt-14">
-        <div className="max-w-2xl mx-auto flex items-center justify-start flex-col gap-6">
+        <div className="w-full md:max-w-2xl mx-auto flex items-center justify-start flex-col gap-6">
           {step === 0 ? (
             <Formulario1 nextStep={() => setStep(step + 1)} />
           ) : step === 1 ? (

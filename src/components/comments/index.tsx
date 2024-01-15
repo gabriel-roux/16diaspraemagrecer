@@ -8,7 +8,7 @@ import {
 } from '@phosphor-icons/react'
 import CommentStruture from './ComentarioStruture'
 import Avatar from '../../../public/avatar.webp'
-import { useEffect, useState, Fragment } from 'react'
+import { useState, Fragment } from 'react'
 import { formatDistanceToNow } from 'date-fns'
 import { comentarios } from './array'
 import { ptBR } from 'date-fns/locale'
@@ -18,15 +18,9 @@ interface TesteProps {
   date: Date
 }
 
-interface LocationProps {
-  city: string
-  region: string
-}
-
 export function Comentarios() {
   const [comment, setComment] = useState('')
   const [comments, setComments] = useState<TesteProps[]>([])
-  const [location, setLocation] = useState({} as LocationProps)
   const [expandirHeight, setExpandirHeight] = useState(false)
   const [toShow, setToShow] = useState(3)
 
@@ -36,7 +30,7 @@ export function Comentarios() {
     if (expandirHeight) {
       setToShow(3)
     } else {
-      setToShow(comentarios(location).length)
+      setToShow(comentarios().length)
     }
   }
 
@@ -58,19 +52,12 @@ export function Comentarios() {
     setComment('')
   }
 
-  useEffect(() => {
-    const fetchLocation = async () => {
-      await fetch('https://ipinfo.io?token=57f3d1eb815176')
-        .then((response) => response.json())
-        .then((data) => setLocation(data))
-    }
-
-    fetchLocation()
-  }, [])
-
   return (
-    <div className="w-full flex items-center justify-center" id="chatSection">
-      <div className="w-[50rem] h-auto bg-[#1b1929] py-8 rounded-lg shadow-lg flex flex-col">
+    <div
+      className="w-full flex items-center justify-center mt-10"
+      id="chatSection"
+    >
+      <div className="w-full md:w-[50rem] h-auto bg-[#1b1929] py-8 rounded-lg shadow-lg flex flex-col">
         <div className="flex items-center gap-2 px-6">
           <h1 className="text-white font-lg">
             <u>Mais Recentes</u>
@@ -99,7 +86,7 @@ export function Comentarios() {
             )
           })}
 
-          {comentarios(location)
+          {comentarios()
             .filter((item, index) => index < toShow)
             .map((item) => (
               <Fragment key={item.name}>

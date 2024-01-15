@@ -487,7 +487,7 @@ export default function Home() {
                   <div className="flex flex-col gap-2">
                     <Link
                       href="/questionario"
-                      className="w-full px-8 py-4 rounded-lg bg-purple-500 shadow-lg shadow-violet-800/50 font-bold text-xl mt-4 uppercase transition-all duration-200 hover:bg-purple-600"
+                      className="w-full px-8 py-4 flex items-center justify-center rounded-lg bg-purple-500 shadow-lg shadow-violet-800/50 font-bold text-xl mt-4 uppercase transition-all duration-200 hover:bg-purple-600"
                     >
                       QUERO ADQUIRIR AGORA
                     </Link>
