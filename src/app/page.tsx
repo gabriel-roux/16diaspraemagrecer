@@ -224,7 +224,7 @@ export default function Home() {
           </h2>
 
           <div className="grid md:grid-cols-4 gap-6">
-            <div className="p-6 bg-[#2e2a41] h-[400px] rounded-lg shadow-lg flex flex-col items-center gap-6">
+            <div className="p-6 bg-[#2e2a41] min-h-[400px] rounded-lg shadow-lg flex flex-col items-center gap-6">
               <Image
                 src={PiramideAlimentar}
                 alt="Pirâmide Alimentar"
@@ -245,7 +245,7 @@ export default function Home() {
                 </p>
               </div>
             </div>
-            <div className="p-6 bg-[#2e2a41] h-[400px] rounded-lg shadow-lg flex flex-col items-center gap-6">
+            <div className="p-6 bg-[#2e2a41] min-h-[400px] rounded-lg shadow-lg flex flex-col items-center gap-6">
               <Image
                 src={ChaRoxo}
                 alt="Cha Roxo"
@@ -267,7 +267,7 @@ export default function Home() {
                 </p>
               </div>
             </div>
-            <div className="p-6 bg-[#2e2a41] h-[400px] rounded-lg shadow-lg flex flex-col items-center gap-6">
+            <div className="p-6 bg-[#2e2a41] min-h-[400px] rounded-lg shadow-lg flex flex-col items-center gap-6">
               <Image
                 src={Atendente}
                 alt="Cha Roxo"
@@ -289,7 +289,7 @@ export default function Home() {
                 </p>
               </div>
             </div>
-            <div className="p-6 bg-[#2e2a41] h-[400px] rounded-lg shadow-lg flex flex-col items-center gap-6">
+            <div className="p-6 bg-[#2e2a41] min-h-[400px] rounded-lg shadow-lg flex flex-col items-center gap-6">
               <Image
                 src={Treinar}
                 alt="Treinar"
