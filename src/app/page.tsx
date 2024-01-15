@@ -28,7 +28,7 @@ import Carousel from '@/components/carousel'
 import Link from 'next/link'
 import Footer from '@/components/footer'
 import { Headline } from '@/components/headline'
-import { useRef } from 'react'
+import { useEffect, useRef } from 'react'
 
 export default function Home() {
   const desafioRef = useRef<HTMLDivElement>(null)
@@ -37,6 +37,12 @@ export default function Home() {
   const praQuemERef = useRef<HTMLDivElement>(null)
   const quemSomosRef = useRef<HTMLDivElement>(null)
   const duvidasRef = useRef<HTMLDivElement>(null)
+
+  useEffect(() => {
+    if ((window as any).fbq) {
+      ;(window as any).fbq('track', 'PageView')
+    }
+  }, [])
 
   return (
     <>
