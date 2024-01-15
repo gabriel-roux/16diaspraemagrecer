@@ -216,7 +216,7 @@ export default function Home() {
       <section className="w-full px-4 md:px-0 py-20 bg-[#1b1929] flex flex-col items-center gap-12">
         <div className="w-full max-w-7xl mx-auto flex flex-col gap-20">
           <h2 className="text-2xl md:text-4xl font-black text-center text-gray-100">
-            UM PROGRAMA COMPLETO QUE VAI, LITERALMENTE{' '}
+            UM PROGRAMA COMPLETO QUE VAI LITERALMENTE{' '}
             <span className="text-purple-600">
               PEGAR VOCÊ PELA MÃO E TE GUIAR PARA UMA VIDA COM MAIS SAÚDE
             </span>
@@ -313,7 +313,7 @@ export default function Home() {
             </div>
           </div>
         </div>
-        <button className="px-7 py-3 rounded-full bg-purple-600 text-[#1b1929] shadow-lg shadow-violet-800/50 font-bold text-2xl mt-4 uppercase transition-all duration-200 hover:bg-purple-700">
+        <button className="px-7 py-3 rounded-full bg-purple-600 text-white shadow-lg shadow-violet-800/50 font-bold text-2xl mt-4 uppercase transition-all duration-200 hover:bg-purple-700">
           QUERO TER RESULTADOS DE VERDADE
         </button>
       </section>
@@ -331,32 +331,60 @@ export default function Home() {
 
               <ul className="flex flex-col gap-3">
                 <li className="text-purple-950 font-bold flex items-center gap-2 text-lg">
-                  <SealCheck weight="fill" size={24} /> Mulheres que querem
-                  emagrecer de forma saudável e definitiva.
+                  <SealCheck
+                    weight="fill"
+                    size={24}
+                    className="flex-shrink-0"
+                  />{' '}
+                  Mulheres que querem emagrecer de forma saudável e definitiva.
                 </li>
                 <li className="text-purple-950 font-bold flex items-center gap-2 text-lg">
-                  <SealCheck weight="fill" size={24} /> Não quer passar fome
-                  para emagrecer.
+                  <SealCheck
+                    weight="fill"
+                    size={24}
+                    className="flex-shrink-0"
+                  />{' '}
+                  Não quer passar fome para emagrecer.
                 </li>
                 <li className="text-purple-950 font-bold flex items-center gap-2 text-lg">
-                  <SealCheck weight="fill" size={24} /> Não quer passar horas na
-                  academia.
+                  <SealCheck
+                    weight="fill"
+                    size={24}
+                    className="flex-shrink-0"
+                  />{' '}
+                  Não quer passar horas na academia.
                 </li>
                 <li className="text-purple-950 font-bold flex items-center gap-2 text-lg">
-                  <SealCheck weight="fill" size={24} /> Não quer gastar dinheiro
-                  com remédios.
+                  <SealCheck
+                    weight="fill"
+                    size={24}
+                    className="flex-shrink-0"
+                  />{' '}
+                  Não quer gastar dinheiro com remédios.
                 </li>
                 <li className="text-purple-950 font-bold flex items-center gap-2 text-lg">
-                  <SealCheck weight="fill" size={24} /> Está com vergonha de
-                  olhar no espelho.
+                  <SealCheck
+                    weight="fill"
+                    size={24}
+                    className="flex-shrink-0"
+                  />{' '}
+                  Está com vergonha de olhar no espelho.
                 </li>
                 <li className="text-purple-950 font-bold flex items-center gap-2 text-lg">
-                  <SealCheck weight="fill" size={24} /> Quer ficar bem usando
-                  roupas mais justas.
+                  <SealCheck
+                    weight="fill"
+                    size={24}
+                    className="flex-shrink-0"
+                  />{' '}
+                  Quer ficar bem usando roupas mais justas.
                 </li>
                 <li className="text-purple-950 font-bold flex items-center gap-2 text-lg">
-                  <SealCheck weight="fill" size={24} /> Não tem tempo ou
-                  dinheiro a perder.
+                  <SealCheck
+                    weight="fill"
+                    size={24}
+                    className="flex-shrink-0"
+                  />{' '}
+                  Não tem tempo ou dinheiro a perder.
                 </li>
               </ul>
 
@@ -404,8 +432,8 @@ export default function Home() {
               Preparamos uma{' '}
               <span className="underline text-purple-600">
                 oferta exclusiva para você
-              </span>
-              , que quer{' '}
+              </span>{' '}
+              que quer{' '}
               <span className="text-purple-600 underline">
                 emagrecer de verdade
               </span>{' '}
