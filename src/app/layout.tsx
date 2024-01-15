@@ -1,10 +1,16 @@
 import type { Metadata } from 'next'
-import { Roboto } from 'next/font/google'
+// eslint-disable-next-line camelcase
+import { Nunito_Sans, Roboto } from 'next/font/google'
 import '@/styles/globals.css'
 
 const roboto = Roboto({
   subsets: ['latin'],
   weight: ['400', '500', '700', '900'],
+})
+const NunitoSans = Nunito_Sans({
+  subsets: ['latin'],
+  weight: ['400', '500', '700', '900'],
+  variable: '--font-nunito',
 })
 
 export const metadata: Metadata = {
@@ -19,7 +25,9 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={roboto.className}>{children}</body>
+      <body className={`${NunitoSans.variable} ${roboto.className}`}>
+        {children}
+      </body>
     </html>
   )
 }

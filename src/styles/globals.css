@@ -36,3 +36,19 @@ body {
 .flutter {
   animation: flutter-bounce 3s infinite;
 }
+
+@keyframes product-flutter {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-8px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.product-flutter {
+  animation: product-flutter 3s ease infinite;
+}
