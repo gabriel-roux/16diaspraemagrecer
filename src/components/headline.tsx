@@ -4,7 +4,7 @@ import Logo from '@/assets/logo.png'
 export function Headline() {
   return (
     <header className="w-full h-20 py-6">
-      <div className="flex justify-center md:justify-between items-center max-w-7xl mx-auto w-full">
+      <div className="flex justify-center md:justify-between items-center max-w-6xl mx-auto w-full">
         <Image
           src={Logo}
           alt="16 Dias para Mudar"
