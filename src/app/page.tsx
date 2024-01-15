@@ -28,7 +28,7 @@ export default function Home() {
   return (
     <main className="mt-14">
       <section className="w-full bg-gradient-to-r from-[#14121c] to-[#6050a020] px-4 md:px-0 py-12">
-        <div className="flex flex-col md:flex-row justify-between items-center max-w-7xl mx-auto">
+        <div className="flex flex-col md:flex-row justify-between items-center max-w-6xl mx-auto">
           <div className="w-full md:max-w-[50%] flex flex-col gap-8 items-start">
             <div className="flex flex-col gap-3">
               <h1 className="text-4xl md:text-5xl font-bold text-white leading-[130%] max-w-lg">
@@ -68,7 +68,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="w-full px-4 md:px-0 py-20 max-w-7xl mx-auto flex flex-col gap-8">
+      <section className="w-full px-4 md:px-0 py-20 max-w-6xl mx-auto flex flex-col gap-8">
         <div>
           <h2 className="text-2xl md:text-4xl font-bold text-center text-gray-100">
             Como Funciona o Nosso{' '}
@@ -181,7 +181,7 @@ export default function Home() {
           </span>
         </h3>
 
-        <div className="w-full md:max-w-7xl mx-auto grid md:grid-cols-3 gap-6">
+        <div className="w-full md:max-w-6xl mx-auto grid md:grid-cols-3 gap-6">
           <Image
             src={AntesDepois1}
             alt="Antes e Depois"
@@ -214,7 +214,7 @@ export default function Home() {
       </section>
 
       <section className="w-full px-4 md:px-0 py-20 bg-[#1b1929] flex flex-col items-center gap-12">
-        <div className="w-full max-w-7xl mx-auto flex flex-col gap-20">
+        <div className="w-full max-w-6xl mx-auto flex flex-col gap-20">
           <h2 className="text-2xl md:text-4xl font-black text-center text-gray-100">
             UM PROGRAMA COMPLETO QUE VAI LITERALMENTE{' '}
             <span className="text-purple-600">
@@ -239,7 +239,7 @@ export default function Home() {
                   Cardápio Transformador
                 </h3>
 
-                <p className="text-center text-gray-400 text-medium mx-auto mt-2">
+                <p className="text-center text-gray-400 text-sm mx-auto mt-2">
                   Explore cardápios e receitas que aceleram o metabolismo e são
                   fáceis de preparar, projetados para nutrir seu corpo e mente.
                 </p>
@@ -260,7 +260,7 @@ export default function Home() {
                   Elixir do Vitalidade
                 </h3>
 
-                <p className="text-center text-gray-400 text-medium mx-auto mt-2">
+                <p className="text-center text-gray-400 text-sm mx-auto mt-2">
                   Emagreça de vez com o chá natural que acelera o metabolismo e
                   elimina gordura. Testado e aprovado por dezenas de mulheres no
                   Brasil!
@@ -282,7 +282,7 @@ export default function Home() {
                   Mentoria e Suporte
                 </h3>
 
-                <p className="text-center text-gray-400 text-medium mx-auto mt-2">
+                <p className="text-center text-gray-400 text-sm mx-auto mt-2">
                   Não está sozinho! Receba orientação personalizada de nossos
                   especialistas para esclarecer dúvidas e manter-se no caminho
                   certo.
@@ -301,10 +301,10 @@ export default function Home() {
 
               <div>
                 <h3 className="text-xl font-black text-center text-white">
-                  Movimente-se e Celebre
+                  Treine e Transforme-se
                 </h3>
 
-                <p className="text-center text-gray-400 text-medium mx-auto mt-2">
+                <p className="text-center text-gray-400 text-sm mx-auto mt-2">
                   Descubra rotinas de exercícios que você pode amar, com vídeos
                   motivacionais para todos os níveis, projetados para queimar
                   calorias e fortalecer o corpo.
@@ -319,7 +319,7 @@ export default function Home() {
       </section>
 
       <section className="w-full px-4 md:px-0 py-20 flex flex-col items-center gap-12 relative bg-white">
-        <div className="w-full max-w-7xl mx-auto">
+        <div className="w-full max-w-6xl mx-auto">
           <div className="flex justify-between items-start">
             <div className="flex flex-col gap-8">
               <h3 className="text-2xl md:text-[39px] font-black text-black">
@@ -426,7 +426,7 @@ export default function Home() {
       </section>
 
       <section className="w-full px-4 md:px-0 py-24 flex flex-col items-center gap-12 relative overflow-hidden">
-        <div className="w-full max-w-7xl mx-auto">
+        <div className="w-full max-w-6xl mx-auto">
           <div className="mb-20">
             <h3 className="text-3xl md:text-5xl font-black text-white text-center md:leading-[60px]">
               Preparamos uma{' '}
@@ -489,7 +489,7 @@ export default function Home() {
       </section>
 
       <section className="w-full px-4 md:px-0 py-20 flex flex-col items-center gap-12 relative bg-[#1b1929]">
-        <div className="w-full max-w-7xl mx-auto">
+        <div className="w-full max-w-6xl mx-auto">
           <div className="w-full flex flex-col md:flex-row justify-center items-center gap-20">
             <div className="flex flex-col">
               <h3 className="text-2xl md:text-5xl font-black text-white text-left leading-10">
@@ -529,7 +529,7 @@ export default function Home() {
       </section>
 
       <section className="w-full px-4 md:px-0 py-20 flex flex-col items-center gap-12 relative">
-        <div className="w-full max-w-7xl mx-auto">
+        <div className="w-full max-w-6xl mx-auto">
           <div className="flex items-center justify-between">
             <div className="w-full md:w-1/2 flex flex-col gap-8">
               <h3
