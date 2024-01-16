@@ -55,7 +55,7 @@ export default function Vsl() {
       {showButton && (
         <Link
           href="https://pay.slatpay.com/QGGOI9"
-          className="w-full max-w- py-5 flex items-center justify-center text-2xl rounded-full uppercase bg-purple-500 shadow-lg shadow-violet-800/50 font-bold transition-all duration-200 hover:bg-purple-600"
+          className="w-full max-w- py-5 flex items-center text-center justify-center text-2xl rounded-2xl uppercase bg-purple-500 shadow-lg shadow-violet-800/50 font-bold transition-all duration-200 hover:bg-purple-600"
         >
           QUERO DAR O PRIMEIRO PASSO AGORA!
         </Link>
