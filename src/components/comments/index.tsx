@@ -22,7 +22,7 @@ export function Comentarios() {
   const [comment, setComment] = useState('')
   const [comments, setComments] = useState<TesteProps[]>([])
   const [expandirHeight, setExpandirHeight] = useState(false)
-  const [toShow, setToShow] = useState(3)
+  const [toShow, setToShow] = useState(1)
 
   const MostrarMais = () => {
     setExpandirHeight(!expandirHeight)
